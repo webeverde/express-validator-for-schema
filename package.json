@@ -6,7 +6,6 @@
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf dist",
-    "prepack": "tsc",
     "test": "mocha -r ts-node/register ./**/*.spec.ts",
     "test-one": "mocha -r ts-node/register ",
     "test-one-debug": "mocha --inspect-brk -r ts-node/register ",
