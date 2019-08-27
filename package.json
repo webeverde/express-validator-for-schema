@@ -1,12 +1,11 @@
 {
   "name": "express-validator-for-schema",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf dist",
-    "prepack": "tsc",
     "test": "mocha -r ts-node/register ./**/*.spec.ts",
     "test-one": "mocha -r ts-node/register ",
     "test-one-debug": "mocha --inspect-brk -r ts-node/register ",
