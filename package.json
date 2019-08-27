@@ -1,0 +1,33 @@
+{
+  "name": "express-validator-for-schema",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prepack": "tsc",
+    "test": "mocha -r ts-node/register ./**/*.spec.ts",
+    "test-one": "mocha -r ts-node/register ",
+    "test-one-debug": "mocha --inspect-brk -r ts-node/register ",
+    "test-debug": "mocha --inspect-brk -r ts-node/register ./**/*.spec.ts",
+    "ts-node": "node -r ts-node/register"
+  },
+  "author": "Richard Naeve",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.515.0",
+    "express-validator": "^6.1.1",
+    "json-stable-stringify": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.31",
+    "@types/node": "^11.13.18",
+    "typescript": "^3.5.3",
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "ts-node": "^8.3.0"
+  }
+}

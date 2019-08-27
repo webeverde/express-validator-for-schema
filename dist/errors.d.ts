@@ -1,0 +1,17 @@
+export declare const INVALID_STRING_VALUE = "INVALID_STRING_VALUE";
+export declare const INVALID_FLOAT_VALUE = "INVALID_FLOAT_VALUE";
+export declare const INVALID_INT_VALUE = "INVALID_INT_VALUE";
+export declare const INVALID_ENUM_VALUE = "INVALID_ENUM_VALUE";
+export declare const INVALID_DATE_VALUE = "INVALID_DATE_VALUE";
+export declare const INVALID_BOOLEAN_VALUE = "INVALID_BOOLEAN_VALUE";
+export declare const INVALID_ARRAY_VALUE = "INVALID_ARRAY_VALUE";
+export declare const REQUIRED_VALUE_MISSING = "REQUIRED_VALUE_MISSING";
+export declare const UNKNOWN_FIELD = "UNKNOWN_FIELD";
+export declare const VALUE_TOO_HIGH = "VALUE_TOO_HIGH";
+export declare const VALUE_TOO_LOW = "VALUE_TOO_LOW";
+export declare const VALUE_TOO_LONG = "VALUE_TOO_LONG";
+export declare const VALUE_TOO_SHORT = "VALUE_TOO_SHORT";
+export declare const INVALID_LENGTH = "INVALID_LENGTH";
+export declare const INVALID_GEOJSON_POINT = "INVALID_GEOJSON_POINT";
+export declare const INVALID_GEOJSON_LINESTRING = "INVALID_GEOJSON_LINESTRING";
+export declare const INVALID_GEOJSON_POLYGON = "INVALID_GEOJSON_POLYGON";

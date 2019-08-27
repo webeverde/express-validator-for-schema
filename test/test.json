@@ -1,0 +1,99 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "MyModel": {
+            "properties": {
+                "enumArray": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "ONE",
+                            "TWO"
+                        ]
+                    }
+                },
+                "enumField": {
+                    "type": "string",
+                    "enum": [
+                        "ONE",
+                        "TWO"
+                    ]
+                },
+                "stringLength": {
+                    "type": "string",
+                    "minLength": 10,
+                    "maxLength": 20
+                },
+                "stringLengthArray": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "minLength": 10,
+                    "maxLength": 20
+                    }
+                },
+                "numberArray": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    }
+                },
+                "numberMaxMin": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 10
+                },
+                "integerValue": {
+                    "type": "integer"
+                },
+                "dateValue": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "booleanValue": {
+                    "type": "boolean"
+                },
+                "customValue": {
+                    "$ref": "#/definitions/OtherModel"
+                },
+                "embeddedArray": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/OtherModel"
+                    }
+                }
+            },
+            "required": [],
+            "type": "object"
+        },
+        "OtherModel": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "minLength": 20
+                },
+                "someNumber": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 10
+                }
+            }
+        },
+        "RequiredModel": {
+            "type": "object",
+            "properties": {
+                "customValue": {
+                    "$ref": "#/definitions/OtherModel"
+                },
+                "embedded": {
+                    "$ref": "#/definitions/MyModel"
+                }
+            },
+            "required": [
+                "customValue"
+            ]
+        }
+    }
+}
