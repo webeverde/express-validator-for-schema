@@ -15,7 +15,7 @@
   "author": "Richard Naeve",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.515.0",
+    "aws-sdk": "^2.814.0",
     "express-validator": "^6.1.1",
     "json-stable-stringify": "^1.0.1"
   },
